@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>畅游中国 - 旅游推荐网站</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header id="main-header">
+        <nav class="container">
+            <a href="index.html" class="logo">畅游中国</a>
+            <ul class="nav-links">
+                <li><a href="index.html">首页</a></li>
+                <li><a href="pages/explore.html">景点探索</a></li>
+                <li><a href="pages/favorite.html">我的收藏</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="banner">
+            <div class="slides" id="slides">
+                <div class="slide">
+                    <img src="img/01-长城.jpg" alt="长城">
+                    <div class="slide-content">
+                        <h2>万里长城</h2>
+                        <p>不到长城非好汉，感受千年历史沧桑</p>
+                        <span class="price">¥280起</span>
+                    </div>
+                </div>
+                <div class="slide">
+                    <img src="img/02-故宫.jpg" alt="故宫">
+                    <div class="slide-content">
+                        <h2>故宫博物院</h2>
+                        <p>紫禁城的辉煌，六百年的皇家气派</p>
+                        <span class="price">¥60起</span>
+                    </div>
+                </div>
+                <div class="slide">
+                    <img src="img/03-西湖.jpg" alt="西湖">
+                    <div class="slide-content">
+                        <h2>杭州西湖</h2>
+                        <p>淡妆浓抹总相宜，人间天堂美景</p>
+                        <span class="price">免费开放</span>
+                    </div>
+                </div>
+            </div>
+            <div class="banner-controls">
+                <button class="banner-btn" id="prevBtn">‹</button>
+                <button class="banner-btn" id="nextBtn">›</button>
+            </div>
+            <div class="banner-indicators" id="indicators">
+                <span class="indicator active"></span>
+                <span class="indicator"></span>
+                <span class="indicator"></span>
+            </div>
+        </section>
+
+        <section class="section-title">
+            <h2>旅游分类</h2>
+            <div class="divider"></div>
+            <p>选择您喜欢的旅游类型，开启精彩旅程</p>
+        </section>
+
+        <section class="categories">
+            <div class="category-card" data-category="natural">
+                <div class="icon">🏔️</div>
+                <h3>自然风光</h3>
+                <p>山川湖海，自然奇观</p>
+            </div>
+            <div class="category-card" data-category="cultural">
+                <div class="icon">🏯</div>
+                <h3>人文古迹</h3>
+                <p>历史遗迹，文化瑰宝</p>
+            </div>
+            <div class="category-card" data-category="city">
+                <div class="icon">🌆</div>
+                <h3>城市风光</h3>
+                <p>现代都市，时尚魅力</p>
+            </div>
+            <div class="category-card" data-category="coastal">
+                <div class="icon">🌊</div>
+                <h3>海滨度假</h3>
+                <p>阳光沙滩，碧海蓝天</p>
+            </div>
+        </section>
+
+        <section class="section-title">
+            <h2>热门景点</h2>
+            <div class="divider"></div>
+            <p>精选热门旅游目的地，带您领略中华美景</p>
+        </section>
+
+        <section class="featured">
+            <div class="featured-grid" id="featuredGrid">
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>关于我们</h3>
+                    <p>畅游中国致力于为游客提供最优质的旅游推荐服务，带您领略祖国大好河山。</p>
+                </div>
+                <div class="footer-section">
+                    <h3>快速链接</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">首页</a></li>
+                        <li><a href="pages/explore.html">景点探索</a></li>
+                        <li><a href="pages/favorite.html">我的收藏</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>联系方式</h3>
+                    <p>邮箱：contact@travel.com</p>
+                    <p>电话：400-123-4567</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 畅游中国旅游网 版权所有</p>
+            </div>
+        </div>
+    </footer>
+
+    <button class="back-top" id="backTop">↑</button>
+
+    <script src="js/main_new.js"></script>
+</body>
+
+</html>
