@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>景点探索 - 畅游中国</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <header id="main-header">
+        <nav class="container">
+            <a href="../index.html" class="logo">畅游中国</a>
+            <ul class="nav-links">
+                <li><a href="../index.html">首页</a></li>
+                <li><a href="explore.html">景点探索</a></li>
+                <li><a href="favorite.html">我的收藏</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="section-title">
+            <h2>景点探索</h2>
+            <div class="divider"></div>
+            <p>发现更多精彩景点，规划您的完美旅程</p>
+        </section>
+
+        <section class="container">
+            <div class="explore-header">
+                <div class="search-box">
+                    <input type="text" id="searchInput" placeholder="搜索景点名称、城市或描述...">
+                    <button id="searchBtn">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <circle cx="11" cy="11" r="8"></circle>
+                            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                        </svg>
+                    </button>
+                </div>
+                <div class="filter-tabs">
+                    <span class="filter-tab active" data-filter="all">全部</span>
+                    <span class="filter-tab" data-filter="natural">自然风光</span>
+                    <span class="filter-tab" data-filter="cultural">人文古迹</span>
+                    <span class="filter-tab" data-filter="city">城市风光</span>
+                    <span class="filter-tab" data-filter="coastal">海滨度假</span>
+                </div>
+                <div class="price-filter">
+                    <label for="priceSelect">价格区间：</label>
+                    <select id="priceSelect">
+                        <option value="all">全部价格</option>
+                        <option value="free">免费</option>
+                        <option value="low">¥100以下</option>
+                        <option value="medium">¥100-500</option>
+                        <option value="high">¥500以上</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="search-result-count" id="resultCount">共 <span>13</span> 个景点</div>
+            <div class="explore-list" id="exploreList">
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>关于我们</h3>
+                    <p>畅游中国致力于为游客提供最优质的旅游推荐服务，带您领略祖国大好河山。</p>
+                </div>
+                <div class="footer-section">
+                    <h3>快速链接</h3>
+                    <ul class="footer-links">
+                        <li><a href="../index.html">首页</a></li>
+                        <li><a href="explore.html">景点探索</a></li>
+                        <li><a href="favorite.html">我的收藏</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>联系方式</h3>
+                    <p>邮箱：contact@travel.com</p>
+                    <p>电话：400-123-4567</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 畅游中国旅游网 版权所有</p>
+            </div>
+        </div>
+    </footer>
+
+    <button class="back-top" id="backTop">↑</button>
+
+    <script src="../js/main_new.js"></script>
+</body>
+
+</html>

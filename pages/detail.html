@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>景点详情 - 畅游中国</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <header id="main-header">
+        <nav class="container">
+            <a href="../index.html" class="logo">畅游中国</a>
+            <ul class="nav-links">
+                <li><a href="../index.html">首页</a></li>
+                <li><a href="explore.html">景点探索</a></li>
+                <li><a href="favorite.html">我的收藏</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="detail-header">
+            <button class="back-btn" onclick="goBack()">← 返回</button>
+            <img id="detailImage" src="" alt="景点图片">
+            <div class="overlay"></div>
+            <div class="detail-title">
+                <h1 id="detailTitle">景点名称</h1>
+                <div class="meta">
+                    <span><span id="detailCity">城市</span></span>
+                    <span>★ <span id="detailRating">4.8</span></span>
+                    <span>¥<span id="detailPrice">280</span>起</span>
+                </div>
+            </div>
+            <button class="favorite-btn" id="favoriteBtn">♥</button>
+        </section>
+
+        <section class="detail-content">
+            <div class="detail-info">
+                <div class="info-item">
+                    <div class="info-value" id="infoRating">4.8</div>
+                    <div class="info-label">游客评分</div>
+                </div>
+                <div class="info-item">
+                    <div class="info-value" id="infoVisitors">500万+</div>
+                    <div class="info-label">年接待量</div>
+                </div>
+                <div class="info-item">
+                    <div class="info-value" id="infoTime">8:00-18:00</div>
+                    <div class="info-label">开放时间</div>
+                </div>
+                <div class="info-item">
+                    <div class="info-value" id="infoCategory">自然风光</div>
+                    <div class="info-label">景点类型</div>
+                </div>
+            </div>
+
+            <div class="detail-tabs">
+                <button class="detail-tab active" data-tab="intro">景点介绍</button>
+                <button class="detail-tab" data-tab="tips">游玩贴士</button>
+                <button class="detail-tab" data-tab="traffic">交通指南</button>
+            </div>
+
+            <div class="tab-content active" id="tab-intro">
+                <p id="introContent"></p>
+            </div>
+            <div class="tab-content" id="tab-tips">
+                <ul id="tipsList"></ul>
+            </div>
+            <div class="tab-content" id="tab-traffic">
+                <ul id="trafficList"></ul>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>关于我们</h3>
+                    <p>畅游中国致力于为游客提供最优质的旅游推荐服务，带您领略祖国大好河山。</p>
+                </div>
+                <div class="footer-section">
+                    <h3>快速链接</h3>
+                    <ul class="footer-links">
+                        <li><a href="../index.html">首页</a></li>
+                        <li><a href="explore.html">景点探索</a></li>
+                        <li><a href="favorite.html">我的收藏</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>联系方式</h3>
+                    <p>邮箱：contact@travel.com</p>
+                    <p>电话：400-123-4567</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 畅游中国旅游网 版权所有</p>
+            </div>
+        </div>
+    </footer>
+
+    <button class="back-top" id="backTop">↑</button>
+
+    <script src="../js/main_new.js"></script>
+</body>
+
+</html>
